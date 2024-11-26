@@ -1,6 +1,3 @@
-# EmptyMake
-Project containing a configuration for an empty cpp project for linux
-
 <!-- GETTING STARTED -->
 ## Getting Started
 This repository contains a ready to use project template for compiling a C++ program using CMake on Linux.
