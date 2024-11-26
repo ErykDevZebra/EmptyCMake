@@ -7,7 +7,7 @@ To get a local copy up and running follow these simple example steps.
 Compiling the program requires a Linux operating system with GNU gcc compiler installed. 
 
 ### Usage
-1. Clone the repo
+1. Clone this repository
    ```sh
    git clone https://github.com/ErykDevZebra/EmptyMake.git
    ```
