@@ -14,7 +14,7 @@ Compiling the program requires a Linux operating system with GNU gcc compiler in
    ```sh
    git clone https://github.com/ErykDevZebra/EmptyMake.git
    ```
-2. Open console at build dir, and run
+2. Open console at build directory, and run
    ```sh
    cmake ./
    make
