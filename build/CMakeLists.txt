@@ -20,7 +20,18 @@ set(HEAD_DIR "../headers")
 file(GLOB_RECURSE SRC_FILES "${SRC_DIR}/*.cpp")
 
 # Optionally, include header files for IDEs
-file(GLOB_RECURSE HEADER_FILES "${HEAD_DIR}/*.h")
+file(GLOB_RECURSE HEADER_FILES 
+    "${HEAD_DIR}/*.h"
+    "${HEAD_DIR}/*.hpp"
+    )
+    
+foreach(header_file ${HEADER_FILES})
+    message(STATUS "Found header file: ${header_file}")
+endforeach()
+
+foreach(src_file ${SRC_FILES})
+    message(STATUS "Found source file: ${src_file}")
+endforeach()
 
 # Add an executable with all the source files
 add_executable(${EXECUTABLE_FILE} ${SRC_FILES} ${HEADER_FILES})

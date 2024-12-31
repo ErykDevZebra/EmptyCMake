@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/mk6554/Desktop/MakeExample/build",
-  "command": "/usr/bin/g++  -I/home/mk6554/Desktop/MakeExample/build/../sources -g -std=gnu++17 -o CMakeFiles/MyExecutable.dir/home/mk6554/Desktop/MakeExample/sources/main.cpp.o -c /home/mk6554/Desktop/MakeExample/sources/main.cpp",
-  "file": "/home/mk6554/Desktop/MakeExample/sources/main.cpp"
-}
-]
