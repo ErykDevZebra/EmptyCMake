@@ -1,8 +1,6 @@
-cmake_minimum_required(VERSION 3.22)
+cmake_minimum_required(VERSION 3.16)
 
 project(ProjectName)
-#include(../headers/CMakeLists.txt)
-
 
 # Specify the C++ standard
 set(CMAKE_CXX_STANDARD 17)
@@ -20,11 +18,11 @@ set(HEAD_DIR "../headers")
 file(GLOB_RECURSE SRC_FILES "${SRC_DIR}/*.cpp")
 
 # Optionally, include header files for IDEs
-file(GLOB_RECURSE HEADER_FILES 
+file(GLOB_RECURSE HEADER_FILES
     "${HEAD_DIR}/*.h"
     "${HEAD_DIR}/*.hpp"
     )
-    
+
 foreach(header_file ${HEADER_FILES})
     message(STATUS "Found header file: ${header_file}")
 endforeach()
@@ -33,11 +31,10 @@ foreach(src_file ${SRC_FILES})
     message(STATUS "Found source file: ${src_file}")
 endforeach()
 
-# Add an executable with all the source files
-add_executable(${EXECUTABLE_FILE} ${SRC_FILES} ${HEADER_FILES})
+include_directories(${HEAD_DIR})
 
-# Optionally, include directories (e.g., for headers)
-target_include_directories(${EXECUTABLE_FILE} PRIVATE ${SRC_DIR})
+# Add an executable with all the source files
+add_executable(${EXECUTABLE_FILE} ${SRC_FILES})
 
 # Add additional libraries, if needed
 # target_link_libraries(${EXECUTABLE_FILE} PRIVATE SomeLibrary)
