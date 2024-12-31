@@ -15,7 +15,7 @@ sudo apt update && sudo apt install -y build-essential cmake
 ### Usage
 1. Clone this repository
    ```bash
-   git clone https://github.com/ErykDevZebra/EmptyMake.git
+   git clone https://github.com/ErykDevZebra/EmptyCMake.git
    ```
 2. Open console at cloned repository, and run
    ```bash
