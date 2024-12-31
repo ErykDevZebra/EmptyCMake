@@ -7,17 +7,18 @@ To get a local copy up and running follow these simple steps.
 Compiling the program requires a Linux operating system with GNU gcc compiler installed. 
 
 Installation of CMake on Ubuntu
-```sh
+```bash
+# Update the package list and install build-essential and cmake
 sudo apt update && sudo apt install -y build-essential cmake
 ```
 
 ### Usage
 1. Clone this repository
-   ```sh
+   ```bash
    git clone https://github.com/ErykDevZebra/EmptyMake.git
    ```
 2. Open console at cloned repository, and run
-   ```sh
+   ```bash
    sudo chmod +x build.sh
    ./build.sh
    ```
