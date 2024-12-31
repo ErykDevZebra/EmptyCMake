@@ -6,7 +6,7 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 Compiling the program requires a Linux operating system with GNU gcc compiler installed. 
 
-Installation of CMake on Ubuntu
+CMake installation on Ubuntu
 ```bash
 # Update the package list and install build-essential and cmake
 sudo apt update && sudo apt install -y build-essential cmake
