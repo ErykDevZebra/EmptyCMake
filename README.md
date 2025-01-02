@@ -4,7 +4,7 @@ This repository contains a ready to use project template for compiling a C++ pro
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
-Compiling the program requires a Linux operating system with GNU gcc compiler installed. 
+Compiling the program requires a Linux operating system with GNU gcc compiler installed and CMake. 
 
 CMake installation on Ubuntu
 ```bash
