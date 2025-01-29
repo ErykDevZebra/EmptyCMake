@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.10)
 
 project(ProjectName)
 
@@ -6,30 +6,21 @@ project(ProjectName)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Specify the source directory
-
 # Define the executable name
 set(EXECUTABLE_FILE MyExecutable)
 
 set(SRC_DIR "../sources")
 set(HEAD_DIR "../headers")
 
-# Collect all .cpp files in the src directory
-file(GLOB_RECURSE SRC_FILES "${SRC_DIR}/*.cpp")
+set(SRC_FILES
+    ${SRC_DIR}/main.cpp
+    #${SRC_DIR}/other.cpp
+)
 
-# Optionally, include header files for IDEs
-file(GLOB_RECURSE HEADER_FILES
-    "${HEAD_DIR}/*.h"
-    "${HEAD_DIR}/*.hpp"
-    )
-
-foreach(header_file ${HEADER_FILES})
-    message(STATUS "Found header file: ${header_file}")
-endforeach()
-
-foreach(src_file ${SRC_FILES})
-    message(STATUS "Found source file: ${src_file}")
-endforeach()
+set(HEADER_FILES
+    ${HEAD_DIR}/main.h
+    #${HEAD_DIR}/other.h
+)
 
 include_directories(${HEAD_DIR})
 
